@@ -23,12 +23,28 @@
         text-decoration: none;
         padding: 20px 70px;
         color: #fff;
+        opacity: 0.7;
+        transition: all 0.2s ease-in-out;
+    }
+
+    a:hover {
+        opacity: 1;
     }
 }
+
 
 
 .home_right {
     display: flex;
     flex-direction: column;
     row-gap: 25px;
+
+    a {
+        transition: all 0.1s;
+    }
+
+    a:hover {
+        transform: scale(1.05);
+        transition: all 0.1s;
+    }
 }

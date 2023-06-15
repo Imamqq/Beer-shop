@@ -12,13 +12,13 @@ const Footer = () => {
     return (
         <div className={s.footer}>
             <div className={s.nav}>
-                <NavLink to='/'>Пиво</NavLink>
-                <NavLink to='/'>Правила игры</NavLink>
-                <NavLink to='/'>сувениры</NavLink>
-                <NavLink to='/'>Оплата и доставка</NavLink>
-                <NavLink to='/'>Про броварню</NavLink>
-                <NavLink to='/'>краудфандинг</NavLink>
-                <NavLink to='/'>контакты</NavLink>
+                <NavLink className={({ isActive }) => `${s.hover} ${isActive ? s.active : ""}`} to='/shop'>Пиво</NavLink>
+                <NavLink className={({ isActive }) => `${s.hover} ${isActive ? s.active : ""}`} to='/'>Правила игры</NavLink>
+                <NavLink className={({ isActive }) => `${s.hover} ${isActive ? s.active : ""}`} to='/'>сувениры</NavLink>
+                <NavLink className={({ isActive }) => `${s.hover} ${isActive ? s.active : ""}`} to='/'>Оплата и доставка</NavLink>
+                <NavLink className={({ isActive }) => `${s.hover} ${isActive ? s.active : ""}`} to='/'>Про броварню</NavLink>
+                <NavLink className={({ isActive }) => `${s.hover} ${isActive ? s.active : ""}`} to='/'>краудфандинг</NavLink>
+                <NavLink className={({ isActive }) => `${s.hover} ${isActive ? s.active : ""}`} to='/'>контакты</NavLink>
             </div>
 
             <div className={s.telephon}>

@@ -15,7 +15,7 @@ const Home = () => {
             <div></div>
             <div className={s.home_center}>
                 <div><img src={beer} alt="beer" /></div>
-                <NavLink className={s.title}>магазин</NavLink>
+                <NavLink to="/shop" className={s.title}>магазин</NavLink>
             </div>
 
             <div className={s.home_right}>
