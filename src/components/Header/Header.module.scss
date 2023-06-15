@@ -5,7 +5,18 @@
         color: #fff;
         text-decoration: none;
         text-transform: uppercase;
+        transition: all 0.2s ease-in-out;
+
     }
+}
+
+.hover:hover {
+    transition: all 0.2s ease-in-out;
+    border-bottom: 1px solid #4E741D;
+}
+
+.active {
+    border-bottom: 1px solid #4E741D;
 }
 
 .nav {
@@ -16,11 +27,10 @@
     margin: 26px 50px 30px 50px;
 }
 
-.left-nav,
-.right-nav {
+.left_nav,
+.right_nav {
     display: flex;
     column-gap: 20px;
     align-items: center;
     font-size: 16px;
-
 }
