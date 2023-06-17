@@ -9,7 +9,7 @@ import Header from './components/Header/Header'
 import Home from './components/Home/Home'
 import Cart from './components/Cart/Cart'
 import Shop from './components/Shop/Shop'
-import BeerCard from './components/BeerCard/BeerCard'
+import BeerInfo from './components/BeerInfo/BeerInfo'
 
 function App() {
 
@@ -27,7 +27,7 @@ function App() {
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/shop' element={<Shop items={beers} />} />
-        <Route path='/beerCard/:id' element={<BeerCard />} />
+        <Route path='/beerInfo/:id' element={<BeerInfo items={{ ...beers }} />} />
         <Route path='/cart' element={<Cart />} />
       </Routes>
       <Footer />
