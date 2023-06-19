@@ -5,18 +5,15 @@ import { useDispatch, useSelector } from 'react-redux'
 import s from "./Shop.module.scss"
 import loadingImg from "../../assets/img/loading3.svg"
 import BeerCard from '../BeerCard/BeerCard'
-import { fetchBeers, getBeers, isLoading } from '../../redux/Slices/ApiSlice'
+import { fetchBeers, getBeers } from '../../redux/Slices/ApiSlice'
 
 
 const Shop = () => {
 
     let [beers, setBeers] = useState([])
 
-    // const { imam } = useSelector(state => state.api)
-    // console.log(imam)
-
+    const { isLoading } = useSelector(state => state.api)
     beers = useSelector(getBeers)
-    let loading = useSelector(isLoading)
 
     const dispatch = useDispatch()
     useEffect(() => {
@@ -28,7 +25,7 @@ const Shop = () => {
         <div className={s.shop}>
             <h1>ПИВО</h1>
 
-            {loading
+            {isLoading
                 ? (
                     <div className={s.loading}>
                         <img src={loadingImg} alt="loading" />

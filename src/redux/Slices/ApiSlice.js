@@ -13,10 +13,10 @@ export const fetchBeers = createAsyncThunk(
         }
     }
 )
+
 let initialState = {
     items: [],
     isLoading: true,
-    imam: [1, 2, 3]
 }
 
 
@@ -25,12 +25,12 @@ export const ApiSlice = createSlice({
     initialState,
     extraReducers: (builder) => {
         builder.addCase(fetchBeers.pending, (state) => {
-            console.log("loading")
+            // console.log("loading")
             state.isLoading = true
         })
         builder.addCase(fetchBeers.fulfilled, (state, { payload }) => {
             state.items = payload
-            console.log("fulfilled")
+            // console.log("fulfilled")
             state.isLoading = false
         })
         builder.addCase(fetchBeers.rejected, () => {

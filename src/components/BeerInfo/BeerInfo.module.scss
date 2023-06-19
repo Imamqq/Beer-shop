@@ -1,0 +1,80 @@
+.loading {
+    text-align: center;
+    margin: 45px 0;
+}
+
+.beer_info {
+    display: flex;
+    // justify-content: space-evenly;
+}
+
+.left {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.right {
+    width: 50%;
+    border-left: 1px solid #C1E1FF;
+    text-align: center;
+    padding: 60px 100px;
+    text-align: left;
+}
+
+.name {
+    text-transform: uppercase;
+}
+
+.sort {
+    text-transform: uppercase;
+    color: #C1E1FF;
+}
+
+.alk {
+    display: flex;
+    text-align: left;
+    color: #C1E1FF;
+    column-gap: 15px;
+}
+
+.style {
+    font-weight: 400;
+
+    span {
+        text-transform: uppercase;
+    }
+}
+
+.volume_price {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.volume {
+    font-size: 18px;
+}
+
+.addCart {
+    display: flex;
+    align-items: center;
+    border: 1px solid #C1E1FF;
+    text-align: center;
+}
+
+.addCart_left {
+    display: flex;
+    gap: 15px;
+    font-size: 20px;
+    padding: 0 20px;
+}
+
+.addCart_right {
+    font-size: 18px;
+    padding: 20px 0;
+    text-align: center;
+    border-left: 1px solid #C1E1FF;
+    width: 100%;
+}
