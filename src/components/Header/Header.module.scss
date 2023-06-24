@@ -37,10 +37,32 @@
 
 .cart {
     transition: all 0.1s;
-
+    position: relative;
 
     &:hover {
         transform: scale(1.05);
         transition: all 0.1s;
     }
+
+    img {
+        height: 40px;
+        width: 40px;
+    }
+
+}
+
+.count {
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    background: purple;
+    right: -2px;
+    bottom: -2px;
+    border-radius: 50%;
+    font-weight: 700;
+    font-size: 15px;
+    color: var(--light);
+    text-align: center;
+    line-height: 16px;
+    font-weight: 400;
 }

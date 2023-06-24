@@ -1,13 +1,18 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
+import { useSelector } from 'react-redux'
 
 import s from "./Header.module.scss"
 
 import logo from "../../assets/img/logo.png"
 import vector from "../../assets/img/Vector.png"
 import cart2 from "../../assets/img/cart2.svg"
+import fullCart from "../../assets/img/fullCart.svg"
 
 const Header = () => {
+
+    const { items } = useSelector(state => state.cart)
+
     return (
         <div className={s.header}>
             <div className={s.nav}>
@@ -32,7 +37,15 @@ const Header = () => {
                         <NavLink to='/'>eng</NavLink>
                         <img src={vector} alt="vector" />
                     </div>
-                    <NavLink to='/cart'><img className={s.cart} src={cart2} alt="cart" /></NavLink>
+                    <NavLink className={s.cart} to='/cart'>
+                        {!items.length
+                            ? <img src={cart2} alt="cart" />
+                            : <img src={fullCart} alt="cart" />
+                        }
+                        {!!items.length && (
+                            <span className={s.count}>{items.length}</span>
+                        )}
+                    </NavLink>
                 </div>
             </div>
         </div>

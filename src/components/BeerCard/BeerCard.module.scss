@@ -69,4 +69,17 @@
     justify-content: space-between;
     font-size: 22px;
     align-items: center;
+
+    img {
+        cursor: pointer;
+        transition: all 0.1s;
+
+        width: 40px;
+        height: 40px;
+
+        &:hover {
+            transform: scale(1.05);
+            transition: all 0.1s;
+        }
+    }
 }

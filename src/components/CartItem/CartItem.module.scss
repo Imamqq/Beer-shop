@@ -1,0 +1,115 @@
+.cartItem {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #c4c4c4;
+    margin-bottom: 35px;
+}
+
+.image {
+    width: 160px;
+    height: 160px;
+}
+
+.opisanie {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 350px;
+
+    .name {
+        text-transform: uppercase;
+        font-size: 20px;
+    }
+
+    .sort {
+        color: #C1E1FF;
+        font-size: 18px;
+        font-weight: 400;
+    }
+
+    p {
+        color: #C1E1FF;
+        margin: 0;
+        font-weight: 400;
+    }
+}
+
+.compound {
+    display: flex;
+    column-gap: 15px;
+}
+
+.volue_price {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+
+    font-size: 18px;
+    font-weight: 300;
+
+    .price {
+        font-size: 30px;
+        font-weight: 600;
+    }
+}
+
+.count {
+    display: inline-flex;
+    justify-content: space-between;
+    gap: 21px;
+    font-size: 23px;
+    border: 1px solid #c4c4c4;
+    padding: 10px 20px;
+    width: 110px;
+    align-items: center;
+    text-align: center;
+
+    .minus {
+        all: unset;
+        font-size: 30px;
+        transition: 0.1s ease-in-out;
+        cursor: pointer;
+        font-size: 30px;
+
+        &:hover {
+            transition: 0.1s ease-in-out;
+            color: purple;
+        }
+    }
+
+    .quantity {
+        text-align: center;
+    }
+
+    .plus {
+        all: unset;
+        transition: 0.1s ease-in-out;
+        cursor: pointer;
+        font-size: 30px;
+
+        &:hover {
+            transition: 0.1s ease-in-out;
+            color: purple;
+        }
+    }
+}
+
+.remove {
+    width: 25px;
+    height: 25px;
+    margin-right: 40px;
+
+    img {
+        width: 22px;
+        height: 22px;
+        transition: 0.1s ease-in-out;
+        cursor: pointer;
+
+        &:hover {
+            transition: 0.1s ease-in-out;
+            scale: 1.1;
+        }
+    }
+
+}
