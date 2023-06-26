@@ -65,10 +65,16 @@
 }
 
 .addCart_left {
-    display: flex;
-    gap: 15px;
-    font-size: 20px;
-    padding: 0 20px;
+
+    display: inline-flex;
+    justify-content: space-between;
+    gap: 20px;
+    font-size: 23px;
+    padding: 10px 20px;
+    width: 110px;
+    align-items: center;
+    text-align: center;
+
 }
 
 .addCart_right {
@@ -77,4 +83,40 @@
     text-align: center;
     border-left: 1px solid #C1E1FF;
     width: 100%;
+    transition: 0.1s ease-in-out;
+
+    &:hover {
+        transition: 0.1s ease-in-out;
+        color: purple;
+        cursor: pointer;
+    }
+}
+
+.minus {
+    all: unset;
+    font-size: 30px;
+    transition: 0.1s ease-in-out;
+    cursor: pointer;
+    font-size: 30px;
+
+    &:hover {
+        transition: 0.1s ease-in-out;
+        color: purple;
+    }
+}
+
+.plus {
+    all: unset;
+    transition: 0.1s ease-in-out;
+    cursor: pointer;
+    font-size: 30px;
+
+    &:hover {
+        transition: 0.1s ease-in-out;
+        color: purple;
+    }
+}
+
+.quantity {
+    text-align: center;
 }

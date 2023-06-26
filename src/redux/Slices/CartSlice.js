@@ -4,7 +4,6 @@ import { createSlice } from '@reduxjs/toolkit'
 let initialState = {
     items: [],
     totalPrice: 0,
-    isAdd: false
 }
 
 
@@ -40,9 +39,10 @@ export const CartSlice = createSlice({
             state.items = state.items.filter(obj => obj.id !== payload.id)
             state.totalPrice -= payload.price * payload.count
         },
+
     }
 })
 
-export const { addItem, minusItem, removeItem, isAdded } = CartSlice.actions
+export const { addItem, minusItem, removeItem, plusCount, addInInfo } = CartSlice.actions
 
 export default CartSlice.reducer

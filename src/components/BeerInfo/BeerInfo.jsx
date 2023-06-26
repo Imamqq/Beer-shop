@@ -9,6 +9,7 @@ import { fetchBeers, getBeers } from '../../redux/Slices/ApiSlice'
 
 
 const BeerInfo = () => {
+
 	const { id } = useParams()
 	const dispatch = useDispatch()
 	const { isLoading } = useSelector(state => state.api)
@@ -78,9 +79,9 @@ const BeerInfo = () => {
 
 								<div className={s.addCart}>
 									<div className={s.addCart_left}>
-										<div>-</div>
-										<div>1</div>
-										<div>+</div>
+										<button className={s.minus}>-</button>
+										<div className={s.quantity}>1</div>
+										<button className={s.plus} >+</button>
 									</div>
 
 									<div className={s.addCart_right}>

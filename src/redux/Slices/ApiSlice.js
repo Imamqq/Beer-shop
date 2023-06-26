@@ -19,7 +19,6 @@ let initialState = {
     isLoading: true,
 }
 
-
 export const ApiSlice = createSlice({
     name: 'api',
     initialState,
@@ -45,3 +44,6 @@ export const getBeers = (state) => state.api.items.beers
 export const isLoading = (state) => state.api.isLoading
 
 export default ApiSlice.reducer
+
+// https://postimg.cc/gallery/5HYQnsC
+// https://postimg.cc/gallery/hgZhf8Fяя

@@ -8,7 +8,6 @@ import cart2 from "../../assets/img/cart2.svg"
 import fullCartImg from "../../assets/img/fullCart.svg"
 import { addItem } from '../../redux/Slices/CartSlice'
 
-
 const BeerCard = ({ id, imageUrl, name, sort, volume, alk, og, ibu, price, count }) => {
 
     const dispatch = useDispatch()
@@ -48,5 +47,4 @@ const BeerCard = ({ id, imageUrl, name, sort, volume, alk, og, ibu, price, count
         </div>
     )
 }
-
 export default BeerCard

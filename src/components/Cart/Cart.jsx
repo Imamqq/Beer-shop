@@ -8,7 +8,6 @@ import CartItem from '../CartItem/CartItem'
 const Cart = () => {
 
     const { items, totalPrice } = useSelector(state => state.cart)
-    const dispatch = useDispatch()
 
     if (!totalPrice) {
         return <CartEmpty />

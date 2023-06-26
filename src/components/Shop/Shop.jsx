@@ -21,7 +21,6 @@ const Shop = () => {
         setBeers(beers)
     }, [dispatch])
 
-
     return (
         <div className={s.shop}>
             <h1>ПИВО</h1>

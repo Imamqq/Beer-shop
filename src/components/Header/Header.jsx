@@ -18,9 +18,9 @@ const Header = () => {
             <div className={s.nav}>
                 <div className={s.left_nav}>
                     <NavLink className={({ isActive }) => `${s.hover} ${isActive ? s.active : ""}`} to='/shop'>Пиво</NavLink>
-                    <NavLink className={({ isActive }) => `${s.hover} ${isActive ? s.active : ""}`} to='/'>Правила игры</NavLink>
-                    <NavLink className={({ isActive }) => `${s.hover} ${isActive ? s.active : ""}`} to='/'>сувениры</NavLink>
-                    <NavLink className={({ isActive }) => `${s.hover} ${isActive ? s.active : ""}`} to='/'>Оплата и доставка</NavLink>
+                    <NavLink className={({ isActive }) => `${s.hover} ${isActive ? s.active : ""}`} to='/notmade'>Правила игры</NavLink>
+                    <NavLink className={({ isActive }) => `${s.hover} ${isActive ? s.active : ""}`} to='/notmade'>сувениры</NavLink>
+                    <NavLink className={({ isActive }) => `${s.hover} ${isActive ? s.active : ""}`} to='/notmade'>Оплата и доставка</NavLink>
                 </div>
 
                 <NavLink to='/'>
@@ -30,11 +30,11 @@ const Header = () => {
                 </NavLink>
 
                 <div className={s.right_nav}>
-                    <NavLink className={({ isActive }) => `${s.hover} ${isActive ? s.active : ""}`} to='/'>Про броварню</NavLink>
-                    <NavLink className={({ isActive }) => `${s.hover} ${isActive ? s.active : ""}`} to='/'>краудфандинг</NavLink>
-                    <NavLink className={({ isActive }) => `${s.hover} ${isActive ? s.active : ""}`} to='/'>контакты</NavLink>
+                    <NavLink className={({ isActive }) => `${s.hover} ${isActive ? s.active : ""}`} to='/notmade'>Про броварню</NavLink>
+                    <NavLink className={({ isActive }) => `${s.hover} ${isActive ? s.active : ""}`} to='/notmade'>краудфандинг</NavLink>
+                    <NavLink className={({ isActive }) => `${s.hover} ${isActive ? s.active : ""}`} to='/notmade'>контакты</NavLink>
                     <div>
-                        <NavLink to='/'>eng</NavLink>
+                        <NavLink to='/notmade'>eng</NavLink>
                         <img src={vector} alt="vector" />
                     </div>
                     <NavLink className={s.cart} to='/cart'>
